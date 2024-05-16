@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  transition: 300ms;
+}
+:root {
+  --light: lightsans;
+  --medium: mediumsans;
+  --sans: iransans;
+  --mobile-title-size: 16px;
+  --tablet-title-size: 18px;
+  --title-color: #ff0000;
+  --para-size14: 14px;
+  --para-size16: 16px;
+  --para-color: #818588;
+}
+@font-face {
+  font-family: lightsans;
+  src: url(../../../fonts/light/IRANSansWeb-Light.eot);
+  src: url(../../../fonts/light/IRANSansWeb-Light.ttf);
+  src: url(../../../fonts/light/IRANSansWeb-Light.woff2);
+  src: url(../../../fonts/light/IRANSansWeb-Light.woff);
+}
+@font-face {
+  font-family: mediumsans;
+  src: url(../../../fonts/medium/IRANSansWebFaNum-Medium.eot);
+  src: url(../../../fonts/medium/IRANSansWebFaNum-Medium.ttf);
+  src: url(../../../fonts/medium/IRANSansWebFaNum-Medium.woff2);
+  src: url(../../../fonts/medium/IRANSansWebFaNum-Medium.woff);
+}
+@font-face {
+  font-family: iransans;
+  src: url(../../../fonts/iransans/AIranianSans.eot);
+  src: url(../../../fonts/iransans/AIranianSans.ttf);
+  src: url(../../../fonts/iransans/AIranianSans.woff2);
+  src: url(../../../fonts/iransans/AIranianSans.woff);
+}
+
+

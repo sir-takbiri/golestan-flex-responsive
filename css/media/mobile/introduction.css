@@ -1,0 +1,30 @@
+.product__introduction {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 35px 25px;
+  .introduction__title {
+    font-family: var(--light);
+    font-size: 16px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  .first__paragraph,
+  .second__paragraph,
+  .third__paragraph {
+    width: 100%;
+    font-family: var(--light);
+    font-size: 14px;
+    color: #818588;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+  & span {
+    color: #ff0000;
+    font-weight: normal;
+  }
+}

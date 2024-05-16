@@ -1,0 +1,36 @@
+.product__introduction {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 65px;
+  .introduction__title {
+    width: 680px;
+    font-family: var(--light);
+    font-size: 16px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  .first__paragraph,
+  .second__paragraph,
+  .third__paragraph {
+    width: 680px !important;
+    font-family: var(--light);
+    font-size: 14px;
+    color: #818588;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+  & span {
+    color: #ff0000;
+    font-weight: normal;
+  }
+  .border {
+    width: 97%;
+    margin: -50px auto 50px auto;
+    border-top: 1px solid #bdbebe;
+  }
+}

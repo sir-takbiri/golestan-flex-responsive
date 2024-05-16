@@ -1,0 +1,103 @@
+.menu {
+  width: 100%;
+  height: 100px;
+  background-image: url(../../../images/menu/header-back.png);
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-content: center;
+  position: fixed;
+  z-index: 999;
+  & nav {
+    width: 70%;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2%;
+    .item {
+      position: relative;
+      width: auto;
+      height: 30px;
+      margin: 40px 0 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .menu__item {
+        display: block;
+        font-family: var(--light);
+        font-size: 16px;
+        font-weight: 100;
+        color: #afb2b4;
+        text-decoration: none;
+        line-height: 20px;
+        transition: 300ms;
+        white-space: nowrap;
+      }
+      .sub__menu {
+        width: fit-content;
+        height: fit-content;
+        direction: rtl;
+        position: absolute;
+        background-color: #2d2d2d;
+        top: 100%;
+        right: 0;
+        opacity: 0;
+        .sub__menu__item {
+          display: none;
+          direction: rtl;
+          font-family: var(--light);
+          font-size: 16px;
+          font-weight: 100;
+          color: #afb2b4;
+          text-decoration: none;
+          line-height: 35px;
+          padding: 5px 20px 5px 40px;
+          white-space: nowrap;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+      .active {
+        color: #ffffff;
+      }
+      &:hover .menu__item {
+        color: #ffffff;
+      }
+      &:hover .sub__menu {
+        opacity: 1;
+      }
+      &:hover .sub__menu .sub__menu__item {
+        display: block;
+      }
+    }
+    .no__lb {
+      border: none;
+    }
+  }
+  .line {
+    display: block;
+    width: 0.1px;
+    height: 30px;
+    background-color: #999a9b;
+    margin: 40px 0 20px 0;
+    opacity: 0.3;
+  }
+  .logo {
+    width: 23%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 88px;
+    padding-right: 20%;
+  }
+  & label[for="menu"] {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+}

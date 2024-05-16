@@ -1,0 +1,151 @@
+footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    .footer__center {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      .social__media {
+        width: 100%;
+        height: 95px;
+        .social__media__center {
+          width: 100%;
+          height: 100%;
+          background-color: #eeefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .social__media__items {
+            width: 53px;
+            height: 55px;
+            border-radius: 50%;
+            padding: 1px 0;
+            & a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              & img {
+                width: 51px;
+                height: 53px;
+              }
+            }
+          }
+        }
+      }
+      .red__counter {
+        width: 100%;
+        height: 25px;
+        background-color: #ed1c24;
+      }
+      .footer__menu__container {
+        width: 100%;
+        height: fit-content;
+        background-image: url(../../../images/footer/footer-back.png);
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        .menu__container__center {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-content: center;
+          .menu__container__items {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            .footer__icon {
+              width: 150px;
+              height: 90px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 21px;
+            }
+            & span {
+              display: block;
+              width: 90%;
+              height: 1px;
+              background-color: #eeefef;
+            }
+            .footer__title {
+              width: 100%;
+              height: 45px;
+              & h5 {
+                width: 100%;
+                font-family: var(--light);
+                font-size: 18px;
+                font-weight: normal;
+                color: white;
+                line-height: 45px;
+                text-align: center;
+              }
+            }
+            .footer__menu {
+              width: 100%;
+              height: fit-content;
+              padding-top: 20px;
+              & nav {
+                width: 100%;
+                height: 100%;
+                & a {
+                  display: block;
+                  width: 100%;
+                  font-family: var(--light);
+                  text-decoration: none;
+                  font-size: 13px;
+                  font-weight: 100;
+                  color: white;
+                  line-height: 28px;
+                  text-align: center;
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+      }
+      .copy__right {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../../images/footer/footer-back.png);
+        .copy__right__center {
+          width: fit-content;
+          height: 100%;
+          margin: 30px 120px;
+          padding: 10px;
+          & .first__copy__right,
+          .second__copy__right {
+            font-family: dubai;
+            font-size: 15px;
+            font-weight: normal;
+            color: #fbfcfc;
+            text-align: center;
+            opacity: 0.7;
+          }
+          .second__copy__right {
+            font-size: 13px;
+            color: #dadddd;
+          }
+        }
+      }
+    }
+  }
+  

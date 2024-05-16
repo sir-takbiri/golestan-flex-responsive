@@ -1,0 +1,109 @@
+.products {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  .products__center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    .border {
+      display: block;
+      width: 97%;
+      height: 1px;
+      border-top: 2px solid #c2c0c0;
+      margin: 0 auto;
+    }
+    .border__2 {
+      display: none;
+    }
+    .main__pic {
+      width: 100%;
+      height: 270px;
+      position: relative;
+      background-color: #e9d69f;
+      margin-top: 30px;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .main__title {
+        width: 100%;
+        height: 95px;
+        background-color: #ed1c24;
+        position: absolute;
+        bottom: 0;
+        & h2,
+        h5 {
+          width: fit-content;
+          height: fit-content;
+          font-family: var(--light);
+          font-weight: normal;
+          color: white;
+          margin-right: 20px;
+        }
+        & h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+        }
+        & h5 {
+          font-size: 16px;
+        }
+      }
+    }
+    .introduction__title {
+      font-family: var(--light);
+      font-size: var(--mobile-title-size);
+      color: var(--title-color);
+      margin: 30px 0 10px 0;
+      padding: 10px 20px;
+    }
+    & p {
+      width: 100%;
+      font-family: var(--light);
+      font-size: var(--para-size14);
+      color: var(--para-color);
+      text-align: justify;
+      line-height: 35px;
+      margin-bottom: 35px;
+      padding: 0 20px;
+      & span {
+        color: var(--title-color);
+        font-weight: bold;
+      }
+    }
+    .product__links {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: 5px;
+      padding: 10px 20px;
+      margin-bottom: 100px;
+      .product__link {
+        display: inline-block;
+        width: 135px;
+        height: 40px;
+        text-align: center;
+        background-color: #ffffff;
+        line-height: 40px;
+        color: var(--para-color);
+        text-decoration: none;
+        font-family: var(--light);
+        font-size: 15px;
+        border-radius: 7px;
+        border: 1px solid #898989;
+        &:hover {
+          background-color: var(--title-color);
+          color: #e3e3e3;
+        }
+      }
+    }
+  }
+}

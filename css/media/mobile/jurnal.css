@@ -1,0 +1,112 @@
+.golestan__jurnal {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  .golestan__jurnal__center {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .jurnal_pooster {
+      width: 100%;
+      height: 250px;
+      background-image: url(../../../images/jurnal/recipe-baner-1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-bottom: 20px;
+    }
+    .jurnal__title {
+      width: 100%;
+      font-family: var(--light);
+      font-size: 19px;
+      color: var(--title-color);
+      font-weight: bold;
+      padding: 30px 30px 40px 0;
+      text-align: right;
+    }
+    .card__container {
+      width: 100%;
+      height: 1300px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+      background-color: #cde4b0;
+      gap: 50px;
+      margin-bottom: 20px;
+      padding: 20px 40px;
+      .jurnal__card {
+        width: 330px;
+        height: 595px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        box-shadow: -3px 3px 7px 2px rgba(0, 0, 0, 0.2);
+        & img {
+          width: 330px;
+          height: 320px;
+          object-fit: cover;
+        }
+        .card__title {
+          height: 11%;
+          font-weight: normal;
+        }
+        & p {
+          width: 100%;
+          height: 20%;
+          font-family: var(--light);
+          font-size: 14px;
+          color: var(--para-color);
+          text-align: justify;
+          line-height: 30px;
+          padding: 0 20px;
+          margin-bottom: 20px;
+        }
+        .resume__of__card {
+          width: 100%;
+          height: 11%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          & a {
+            display: block;
+            width: fit-content;
+            height: 40px;
+            text-align: center;
+            background-color: #ffffff;
+            line-height: 40px;
+            color: var(--para-color);
+            text-decoration: none;
+            font-family: var(--light);
+            font-size: 15px;
+            border-radius: 7px;
+            border: 1px solid #afafaf;
+            align-self: flex-start;
+            margin-right: 20px;
+            padding: 0 20px;
+            &:hover {
+              background-color: #ff0000;
+              color: #e3e3e3;
+            }
+          }
+        }
+      }
+    }
+    .third__card {
+      display: none !important;
+      & img,
+      & h5,
+      & p,
+      & a {
+        display: none;
+      }
+    }
+  }
+}
